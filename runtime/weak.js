@@ -46,3 +46,24 @@ function caml_weak_check(x, i) {
 //Provides: caml_weak_blit
 //Requires: caml_array_blit
 var caml_weak_blit = caml_array_blit;
+
+
+//Provides: caml_ephe_create
+//Requires: caml_weak_create
+var caml_ephe_create = caml_weak_create
+
+//Provides: caml_ephe_blit_key
+//Requires: caml_weak_blit
+var caml_ephe_blit_key = caml_weak_blit
+
+  // caml_ephe_blit_data
+  // caml_ephe_check_data
+  // caml_ephe_check_key
+  // caml_ephe_get_data
+  // caml_ephe_get_data_copy
+  // caml_ephe_get_key
+  // caml_ephe_get_key_copy
+  // caml_ephe_set_data
+  // caml_ephe_set_key
+  // caml_ephe_unset_data
+  // caml_ephe_unset_key
