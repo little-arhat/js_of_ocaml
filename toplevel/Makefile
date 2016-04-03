@@ -33,6 +33,7 @@ PACKAGES= \
 	js_of_ocaml $(DERIVING) \
 	js_of_ocaml.tyxml \
 	js_of_ocaml.toplevel \
+	js_of_ocaml.ppx.internal \
 	dynlink
 
 ifeq ($(WITH_GRAPHICS),YES)

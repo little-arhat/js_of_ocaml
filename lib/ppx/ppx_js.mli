@@ -76,3 +76,6 @@ end
    }
 
 *)
+
+
+val register : unit -> unit

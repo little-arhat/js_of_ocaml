@@ -84,6 +84,7 @@ let reset_toplevel top () =
   Toplevel_ui.setup_toplevel (exec top)
 
 let () =
+  let () = Ast_mapper.register "js_of_ocaml.ppx" Ppx_js.js_mapper in
   let run _ =
     Lwt.async (fun () ->
       Toplevel_ui.run init reset_toplevel execute_phrases) ;

@@ -472,3 +472,7 @@ let js_mapper _args =
       new_expr
     )
   }
+
+
+let () =
+  Ast_mapper.register "js_of_ocaml.ppx" js_mapper
